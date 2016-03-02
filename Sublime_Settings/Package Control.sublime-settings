@@ -1,17 +1,13 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
 	"installed_packages":
 	[
-		"F#",
 		"Indent XML",
-		"MarkdownEditing",
+		"Material Theme",
 		"Package Control",
-		"PlainTasks",
-		"PowerShell",
-		"Predawn",
-		"SublimeREPL",
-		"Theme - Piatto"
+		"PlainTasks"
 	]
 }
