@@ -9,6 +9,11 @@ new-item alias:mpv -value 'F:\Development\NModel\bin\mpv.exe'
 new-item alias:otg -value 'F:\Development\NModel\bin\otg.exe'
 new-item alias:mp2dot -value 'F:\Development\NModel\bin\mp2dot.exe'
 new-item alias:ct -value 'F:\Development\NModel\bin\ct.exe'
-new-item alias:gacutil -value 'C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\gacutil.exe'
+new-item alias:gacutil -value 'C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6 Tools\gacutil.exe'
 new-item alias:installutil -value 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe'
 
+function Start-iCoreServer { Start-Service (Get-Service "iCoreMgmtSvc") }
+New-Alias -Name icore-start -Value Start-iCoreServer
+
+function Stop-iCoreServer { Stop-Service (Get-Service "iCoreMgmtSvc") }
+New-Alias -Name icore-stop -Value Stop-iCoreServer
