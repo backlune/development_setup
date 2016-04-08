@@ -17,3 +17,18 @@ New-Alias -Name icore-start -Value Start-iCoreServer
 
 function Stop-iCoreServer { Stop-Service (Get-Service "iCoreMgmtSvc") }
 New-Alias -Name icore-stop -Value Stop-iCoreServer
+
+
+function Clear-iCoreReg { 
+    Find-iCoreComRegistrations | Tee-Object -Variable reg
+ 
+    $reg | Foreach-Object { $_.RegistryKey } | Remove-Item -Force -Recurse 
+}
+New-Alias -Name icore-clearreg -Value Clear-iCoreReg
+
+function Fix-iCoreJuncation{
+    $Branch = Select-iCoreBranch
+
+    Update-iCoreJunctions $Branch -Force
+}
+New-Alias -Name icore-fixjuncation -Value Fix-iCoreJuncation
