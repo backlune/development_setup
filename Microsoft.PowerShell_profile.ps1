@@ -4,6 +4,7 @@ new-item alias:icore-admin -value F:\ETWork\Bin\Admin.exe
 new-item alias:icore-runcomp -value F:\ETWork\Bin\RunCompTool.exe
 new-item alias:icore-wf -value F:\ETWork\Bin\WorkflowDesigner.exe
 new-item alias:icore-dev -value F:\ETWork\Bin\Editor.exe
+new-item alias:icore-sin -value F:\ETWork\Bin\Tests\SInTEST.exe
 #new-item alias:opencover -value C:\Users\bacemi\AppData\Local\Apps\OpenCover\OpenCover.Console.exe
 new-item alias:mpv -value 'F:\Development\NModel\bin\mpv.exe'
 new-item alias:otg -value 'F:\Development\NModel\bin\otg.exe'
@@ -20,15 +21,15 @@ New-Alias -Name icore-stop -Value Stop-iCoreServer
 
 
 function Clear-iCoreReg { 
-    Find-iCoreComRegistrations | Tee-Object -Variable reg
+	Find-iCoreComRegistrations | Tee-Object -Variable reg
  
-    $reg | Foreach-Object { $_.RegistryKey } | Remove-Item -Force -Recurse 
+	$reg | Foreach-Object { $_.RegistryKey } | Remove-Item -Force -Recurse 
 }
 New-Alias -Name icore-clearreg -Value Clear-iCoreReg
 
 function Fix-iCoreJuncation{
-    $Branch = Select-iCoreBranch
+	$Branch = Select-iCoreBranch
 
-    Update-iCoreJunctions $Branch -Force
+	Update-iCoreJunctions $Branch -Force
 }
-New-Alias -Name icore-fixjuncation -Value Fix-iCoreJuncation
+New-Alias -Name icore-fixjuncation-Value Fix-iCoreJuncation
