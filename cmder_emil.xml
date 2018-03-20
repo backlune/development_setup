@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2016-04-04 10:32:46" build="140707">
+		<key name=".Vanilla" modified="2018-03-20 08:37:00" build="140707">
 			<value name="ColorTable00" type="dword" data="00222827"/>
 			<value name="ColorTable01" type="dword" data="009e5401"/>
 			<value name="ColorTable02" type="dword" data="0004aa74"/>
@@ -85,7 +85,7 @@
 			<value name="StoreTaskbarkTasks" type="hex" data="00"/>
 			<value name="StoreTaskbarCommands" type="hex" data="00"/>
 			<value name="SaveCmdHistory" type="hex" data="01"/>
-			<value name="CmdLineHistory" type="multi"><line data="{vs cmd}"/><line data="{PowerShell (Admin)}"/><line data="{cmd (Admin)}"/></value>
+			<value name="CmdLineHistory" type="multi"><line data="&quot;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe&quot;"/><line data="&quot;C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe&quot;"/><line data="&quot;C:\WINDOWS\SYSTEM32\cmd.exe&quot; /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\vsvars32.bat&quot;&quot;"/><line data="{cmd (Admin)}"/><line data="{vs cmd}"/><line data="{PowerShell (Admin)}"/></value>
 			<value name="SingleInstance" type="hex" data="00"/>
 			<value name="ShowHelpTooltips" type="hex" data="00"/>
 			<value name="Multi" type="hex" data="01"/>
@@ -126,18 +126,18 @@
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="00"/>
 			<value name="bgPluginAllowed" type="hex" data="00"/>
-			<value name="AlphaValue" type="hex" data="ff"/>
+			<value name="AlphaValue" type="hex" data="e6"/>
 			<value name="AlphaValueSeparate" type="hex" data="01"/>
-			<value name="AlphaValueInactive" type="hex" data="ff"/>
+			<value name="AlphaValueInactive" type="hex" data="37"/>
 			<value name="UserScreenTransparent" type="hex" data="00"/>
 			<value name="ColorKeyTransparent" type="hex" data="00"/>
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd Width" type="dword" data="0000006e"/>
-			<value name="ConWnd Height" type="dword" data="00000041"/>
+			<value name="ConWnd Width" type="dword" data="000000c8"/>
+			<value name="ConWnd Height" type="dword" data="0000003f"/>
 			<value name="Cascaded" type="hex" data="00"/>
-			<value name="ConWnd X" type="dword" data="00000402"/>
+			<value name="ConWnd X" type="dword" data="00000000"/>
 			<value name="ConWnd Y" type="dword" data="fffffffd"/>
 			<value name="16bit Height" type="dword" data="00000000"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
@@ -155,7 +155,7 @@
 			<value name="ConsoleFontName" type="string" data="Lucida Console"/>
 			<value name="ConsoleFontWidth" type="dword" data="00000003"/>
 			<value name="ConsoleFontHeight" type="dword" data="00000005"/>
-			<value name="DefaultBufferHeight" type="dword" data="000003e8"/>
+			<value name="DefaultBufferHeight" type="dword" data="00007ffe"/>
 			<value name="AutoBufferHeight" type="hex" data="01"/>
 			<value name="CmdOutputCP" type="dword" data="00000000"/>
 			<value name="ComSpec.Type" type="hex" data="00"/>
@@ -262,7 +262,7 @@
 			<value name="StatusBar.Hide.New" type="hex" data="00"/>
 			<value name="StatusBar.Hide.Sync" type="hex" data="00"/>
 			<value name="StatusBar.Hide.Proc" type="hex" data="00"/>
-			<value name="StatusBar.Hide.Title" type="hex" data="01"/>
+			<value name="StatusBar.Hide.Title" type="hex" data="00"/>
 			<value name="StatusBar.Hide.Time" type="hex" data="01"/>
 			<value name="StatusBar.Hide.Resize" type="hex" data="00"/>
 			<value name="Tabs" type="hex" data="01"/>
@@ -525,9 +525,9 @@
 			<value name="DndLKey" type="hex" data="00"/>
 			<value name="DndRKey" type="hex" data="a2"/>
 			<value name="WndDragKey" type="dword" data="00121101"/>
-				<key name="Tasks" modified="2016-04-04 10:32:46" build="140707">
+				<key name="Tasks" modified="2018-03-20 08:37:00" build="140707">
 				<value name="Count" type="dword" data="00000008"/>
-						<key name="Task1" modified="2016-04-04 10:32:46" build="140707">
+						<key name="Task1" modified="2018-03-20 08:37:00" build="140707">
 					<value name="Name" type="string" data="{PowerShell (Admin)}"/>
 					<value name="Hotkey" type="dword" data="00101231"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -535,7 +535,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-						<key name="Task2" modified="2016-04-04 10:32:46" build="140707">
+						<key name="Task2" modified="2018-03-20 08:37:00" build="140707">
 					<value name="Name" type="string" data="{Powershell 32}"/>
 					<value name="Hotkey" type="dword" data="00101232"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -543,15 +543,15 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-						<key name="Task3" modified="2016-04-04 10:32:46" build="140707">
+						<key name="Task3" modified="2018-03-20 08:37:00" build="140707">
 					<value name="Name" type="string" data="{vs cmd}"/>
 					<value name="Hotkey" type="dword" data="00101233"/>
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data="cmd.exe /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\vsvars32.bat&quot;&quot; -new_console:a"/>
+					<value name="Cmd1" type="string" data="cmd.exe /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\Tools\VsDevCmd.bat&quot;&quot; -new_console:a"/>
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-						<key name="Task4" modified="2016-04-04 10:32:46" build="140707">
+						<key name="Task4" modified="2018-03-20 08:37:00" build="140707">
 					<value name="Name" type="string" data="{cmd (Admin)}"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -559,7 +559,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-						<key name="Task5" modified="2016-04-04 10:32:46" build="140707">
+						<key name="Task5" modified="2018-03-20 08:37:00" build="140707">
 					<value name="Name" type="string" data="{PowerShell}"/>
 					<value name="Hotkey" type="dword" data="00101234"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -568,7 +568,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-						<key name="Task6" modified="2016-04-04 10:32:46" build="140707">
+						<key name="Task6" modified="2018-03-20 08:37:00" build="140707">
 					<value name="Name" type="string" data="{cmd 64/32}"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -577,7 +577,7 @@
 					<value name="Count" type="dword" data="00000002"/>
 					<value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k ver &amp; echo This is 32 bit cmd.exe -new_console:s50V"/>
 				</key>
-						<key name="Task7" modified="2016-04-04 10:32:46" build="140707">
+						<key name="Task7" modified="2018-03-20 08:37:00" build="140707">
 					<value name="Name" type="string" data="{Show ANSI colors}"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -585,7 +585,7 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-						<key name="Task8" modified="2016-04-04 10:32:46" build="140707">
+						<key name="Task8" modified="2018-03-20 08:37:00" build="140707">
 					<value name="Name" type="string" data="{Chocolatey (Admin)}"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -594,10 +594,10 @@
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
 			</key>
-				<key name="Apps" modified="2016-04-04 10:32:46" build="140707">
+				<key name="Apps" modified="2018-03-20 08:37:00" build="140707">
 				<value name="Count" type="dword" data="00000000"/>
 			</key>
-				<key name="Colors" modified="2016-04-04 10:32:46" build="140707">
+				<key name="Colors" modified="2018-03-20 08:37:00" build="140707">
 				<value name="Count" type="dword" data="00000000"/>
 			</key>
 		</key>
