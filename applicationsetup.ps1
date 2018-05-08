@@ -2,7 +2,9 @@
 
 #iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 
-#choco install evernote
+choco install googlechrome
+
+choco install evernote
 
 choco install cmder
 
@@ -21,3 +23,16 @@ choco install sublimetext3
 choco install spotify
 
 choco install adobereader
+
+choco install procexp
+
+choco install procmon
+
+choco install paint.net 
+
+choco install firefox
+
+
+## Install PS modules
+Install-Module posh-git -AllowClobber
+Install-Module z -AllowClobber
